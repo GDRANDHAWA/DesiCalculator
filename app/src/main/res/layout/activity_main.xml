@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/calcu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/edt1"
+        android:hint="PEHLA no."
+        android:background="@drawable/circle_layout"
+
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:inputType="number"
+
+android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:hint="Duja no."
+        android:background="@drawable/circle_layout"
+        android:layout_toRightOf="@id/edt1"
+        android:id="@+id/edt2"
+        android:padding="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD- +"
+        android:layout_centerVertical="true"
+        android:id="@+id/add_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MINUS -"
+        android:layout_toRightOf="@+id/add_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/minus_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULTIPLY- x"
+        android:layout_toRightOf="@+id/minus_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/multiply_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIVIDE- /"
+        android:layout_toRightOf="@+id/multiply_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/divide_btn"/>
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Result"
+        android:textSize="25dp"
+        android:id="@+id/resultText"
+        android:layout_below="@+id/add_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_layout"
+        android:padding="20dp"
+        />
+</RelativeLayout>
